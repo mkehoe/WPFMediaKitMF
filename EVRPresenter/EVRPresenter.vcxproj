@@ -66,36 +66,40 @@
     <_ProjectFileVersion>11.0.51106.1</_ProjectFileVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
-    <IntDir>$(Configuration)\</IntDir>
+    <OutDir>$(ProjectDir)$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)$(Configuration)\</IntDir>
     <LinkIncremental>true</LinkIncremental>
     <ToolsPath Condition="'$(DXSDK_DIR)' == ''">C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\</ToolsPath>
     <IncludePath>$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSDK_IncludePath);$(IncludePath);$(DXSDK_DIR)Include</IncludePath>
     <LibraryPath>$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSDK_LibraryPath_x86);$(LibraryPath);$(DXSDK_DIR)Lib\x86</LibraryPath>
+    <TargetName>$(ProjectName)x86</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
-    <IntDir>$(Configuration)\</IntDir>
+    <OutDir>$(ProjectDir)$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)$(Configuration)\</IntDir>
     <LinkIncremental>false</LinkIncremental>
     <ToolsPath Condition="'$(DXSDK_DIR)' == ''">C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\</ToolsPath>
     <IncludePath>$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSDK_IncludePath);$(IncludePath);$(DXSDK_DIR)Include</IncludePath>
     <LibraryPath>$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSDK_LibraryPath_x86);$(LibraryPath);$(DXSDK_DIR)Lib\x86</LibraryPath>
+    <TargetName>$(ProjectName)x86</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
-    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <OutDir>$(ProjectDir)$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)$(Configuration)\</IntDir>
     <LinkIncremental>true</LinkIncremental>
     <ToolsPath Condition="'$(DXSDK_DIR)' == ''">C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\</ToolsPath>
     <IncludePath>$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSDK_IncludePath);$(IncludePath);$(DXSDK_DIR)Include</IncludePath>
     <LibraryPath>$(VCInstallDir)lib\amd64;$(VCInstallDir)atlmfc\lib\amd64;$(WindowsSDK_LibraryPath_x64);$(LibraryPath);$(DXSDK_DIR)Lib\x64</LibraryPath>
+    <TargetName>$(ProjectName)x64</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
-    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <OutDir>$(ProjectDir)$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)$(Configuration)\</IntDir>
     <LinkIncremental>false</LinkIncremental>
     <ToolsPath Condition="'$(DXSDK_DIR)' == ''">C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\</ToolsPath>
     <IncludePath>$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSDK_IncludePath);$(IncludePath);$(DXSDK_DIR)Include</IncludePath>
     <LibraryPath>$(VCInstallDir)lib\amd64;$(VCInstallDir)atlmfc\lib\amd64;$(WindowsSDK_LibraryPath_x64);$(LibraryPath);$(DXSDK_DIR)Lib\x64</LibraryPath>
+    <TargetName>$(ProjectName)x64</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -112,7 +116,7 @@
     <Link>
       <RegisterOutput>false</RegisterOutput>
       <AdditionalDependencies>strmiids.lib;dxva2.lib;d3d9.lib;mfuuid.lib;mfplat.lib;mf.lib;evr.lib;winmm.lib;d3dx9.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <OutputFile>..\bin\Debug\$(ProjectName)32.dll</OutputFile>
+      <OutputFile>$(ProjectDir)$(Configuration)\$(ProjectName)x86.dll</OutputFile>
       <ModuleDefinitionFile>EVRPresenter.def</ModuleDefinitionFile>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
@@ -132,7 +136,7 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>strmiids.lib;dxva2.lib;d3d9.lib;mfuuid.lib;mfplat.lib;mf.lib;evr.lib;winmm.lib;d3dx9.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <OutputFile>..\bin\Release\$(ProjectName)32.dll</OutputFile>
+      <OutputFile>$(ProjectDir)$(Configuration)\$(ProjectName)x86.dll</OutputFile>
       <ModuleDefinitionFile>EVRPresenter.def</ModuleDefinitionFile>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
@@ -161,7 +165,7 @@
     <Link>
       <RegisterOutput>false</RegisterOutput>
       <AdditionalDependencies>strmiids.lib;dxva2.lib;d3d9.lib;mfuuid.lib;mfplat.lib;mf.lib;evr.lib;winmm.lib;d3dx9.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <OutputFile>..\bin\Debug\$(ProjectName)64.dll</OutputFile>
+      <OutputFile>$(ProjectDir)$(Configuration)\$(ProjectName)x64.dll</OutputFile>
       <ModuleDefinitionFile>EVRPresenter.def</ModuleDefinitionFile>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
@@ -184,7 +188,7 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>strmiids.lib;dxva2.lib;d3d9.lib;mfuuid.lib;mfplat.lib;mf.lib;evr.lib;winmm.lib;d3dx9.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <OutputFile>..\bin\Release\$(ProjectName)64.dll</OutputFile>
+      <OutputFile>$(ProjectDir)$(Configuration)\$(ProjectName)x64.dll</OutputFile>
       <ModuleDefinitionFile>EVRPresenter.def</ModuleDefinitionFile>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>

@@ -80,7 +80,7 @@ namespace MediaFoundation.MediaPlayers.EVR
         /// Static method in the 32 bit dll to create our IClassFactory
         /// </summary>
         [PreserveSig]
-        [DllImport("EvrPresenter32.dll", EntryPoint = "DllGetClassObject")]
+        [DllImport("EvrPresenterx86.dll", EntryPoint = "DllGetClassObject")]
         private static extern int DllGetClassObject32([MarshalAs(UnmanagedType.LPStruct)] Guid clsid,
                                                       [MarshalAs(UnmanagedType.LPStruct)] Guid riid,
                                                       [MarshalAs(UnmanagedType.IUnknown)] out object ppv);
@@ -89,7 +89,7 @@ namespace MediaFoundation.MediaPlayers.EVR
         /// Static method in the 62 bit dll to create our IClassFactory
         /// </summary>
         [PreserveSig]
-        [DllImport("EvrPresenter64.dll", EntryPoint = "DllGetClassObject")]
+        [DllImport("EvrPresenterx64.dll", EntryPoint = "DllGetClassObject")]
         private static extern int DllGetClassObject64([MarshalAs(UnmanagedType.LPStruct)] Guid clsid,
                                                       [MarshalAs(UnmanagedType.LPStruct)] Guid riid,
                                                       [MarshalAs(UnmanagedType.IUnknown)] out object ppv);
