@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VisualStudioProject ProjectType="Visual C++" Version="9.00" Name="EVRPresenterCommon - Do Not Build" ProjectGUID="{09DB943E-5D0F-4CEC-90CC-432FAFDBC109}" RootNamespace="Common" TargetFrameworkVersion="196613">
+  <Platforms>
+    <Platform Name="Win32" />
+  </Platforms>
+  <ToolFiles>
+  </ToolFiles>
+  <Configurations>
+    <Configuration Name="Debug|Win32" OutputDirectory="$(SolutionDir)$(ConfigurationName)" IntermediateDirectory="$(ConfigurationName)" ConfigurationType="4" CharacterSet="2">
+      <Tool Name="VCPreBuildEventTool" />
+      <Tool Name="VCCustomBuildTool" />
+      <Tool Name="VCXMLDataGeneratorTool" />
+      <Tool Name="VCWebServiceProxyGeneratorTool" />
+      <Tool Name="VCMIDLTool" />
+      <Tool Name="VCCLCompilerTool" Optimization="0" MinimalRebuild="true" BasicRuntimeChecks="3" RuntimeLibrary="3" WarningLevel="3" DebugInformationFormat="4" />
+      <Tool Name="VCManagedResourceCompilerTool" />
+      <Tool Name="VCResourceCompilerTool" />
+      <Tool Name="VCPreLinkEventTool" />
+      <Tool Name="VCLibrarianTool" />
+      <Tool Name="VCALinkTool" />
+      <Tool Name="VCXDCMakeTool" />
+      <Tool Name="VCBscMakeTool" />
+      <Tool Name="VCFxCopTool" />
+      <Tool Name="VCPostBuildEventTool" />
+    </Configuration>
+    <Configuration Name="Release|Win32" OutputDirectory="$(SolutionDir)$(ConfigurationName)" IntermediateDirectory="$(ConfigurationName)" ConfigurationType="1" CharacterSet="2" WholeProgramOptimization="1">
+      <Tool Name="VCPreBuildEventTool" />
+      <Tool Name="VCCustomBuildTool" />
+      <Tool Name="VCXMLDataGeneratorTool" />
+      <Tool Name="VCWebServiceProxyGeneratorTool" />
+      <Tool Name="VCMIDLTool" />
+      <Tool Name="VCCLCompilerTool" Optimization="2" EnableIntrinsicFunctions="true" RuntimeLibrary="2" EnableFunctionLevelLinking="true" WarningLevel="3" DebugInformationFormat="3" />
+      <Tool Name="VCManagedResourceCompilerTool" />
+      <Tool Name="VCResourceCompilerTool" />
+      <Tool Name="VCPreLinkEventTool" />
+      <Tool Name="VCLinkerTool" GenerateDebugInformation="true" OptimizeReferences="2" EnableCOMDATFolding="2" TargetMachine="1" />
+      <Tool Name="VCALinkTool" />
+      <Tool Name="VCManifestTool" />
+      <Tool Name="VCXDCMakeTool" />
+      <Tool Name="VCBscMakeTool" />
+      <Tool Name="VCFxCopTool" />
+      <Tool Name="VCAppVerifierTool" />
+      <Tool Name="VCPostBuildEventTool" />
+    </Configuration>
+  </Configurations>
+  <References>
+  </References>
+  <Files>
+    <Filter Name="Source Files" Filter="cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx" UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}">
+      <File RelativePath=".\WinUI\BaseWindow.cpp" FileType="5">
+      </File>
+      <File RelativePath=".\WinUI\Button.cpp" FileType="5">
+      </File>
+      <File RelativePath=".\WinUI\ComboBox.cpp" FileType="5">
+      </File>
+      <File RelativePath=".\WinUI\Dialog.cpp" FileType="5">
+      </File>
+      <File RelativePath=".\WinUI\listbox.cpp" FileType="5">
+      </File>
+      <File RelativePath=".\WinUI\listview.cpp" FileType="5">
+      </File>
+      <File RelativePath=".\WinUI\Slider.cpp" FileType="5">
+      </File>
+      <File RelativePath=".\WinUI\toolbar.cpp" FileType="5">
+      </File>
+      <File RelativePath=".\WinUI\wincontrol.cpp" FileType="5">
+      </File>
+    </Filter>
+    <Filter Name="Header Files" Filter="h;hpp;hxx;hm;inl;inc;xsd" UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}">
+      <File RelativePath=".\AsyncCB.h" FileType="5">
+      </File>
+      <File RelativePath=".\WinUI\BaseWindow.h" FileType="5">
+      </File>
+      <File RelativePath=".\BufferLock.h" FileType="5">
+      </File>
+      <File RelativePath=".\WinUI\Button.h" FileType="5">
+      </File>
+      <File RelativePath=".\ClassFactory.h" FileType="5">
+      </File>
+      <File RelativePath=".\WinUI\ComboBox.h" FileType="5">
+      </File>
+      <File RelativePath=".\common.h" FileType="5">
+      </File>
+      <File RelativePath=".\critsec.h" FileType="5">
+      </File>
+      <File RelativePath=".\WinUI\dialog.h" FileType="5">
+      </File>
+      <File RelativePath=".\GrowArray.h" FileType="5">
+      </File>
+      <File RelativePath=".\linklist.h" FileType="5">
+      </File>
+      <File RelativePath=".\WinUI\listbox.h" FileType="5">
+      </File>
+      <File RelativePath=".\WinUI\listview.h" FileType="5">
+      </File>
+      <File RelativePath=".\logging.h" FileType="5">
+      </File>
+      <File RelativePath=".\mediatype.h" FileType="5">
+      </File>
+      <File RelativePath=".\mfutils.h" FileType="5">
+      </File>
+      <File RelativePath=".\PropVar.h" FileType="5">
+      </File>
+      <File RelativePath=".\registry.h" FileType="5">
+      </File>
+      <File RelativePath=".\WinUI\Slider.h" FileType="5">
+      </File>
+      <File RelativePath=".\smartptr.h" FileType="5">
+      </File>
+      <File RelativePath=".\TinyMap.h" FileType="5">
+      </File>
+      <File RelativePath=".\WinUI\toolbar.h" FileType="5">
+      </File>
+      <File RelativePath=".\trace.h" FileType="5">
+      </File>
+      <File RelativePath=".\WinUI\trackbar.h" FileType="5">
+      </File>
+      <File RelativePath=".\WinUI\wincontrol.h" FileType="5">
+      </File>
+    </Filter>
+    <Filter Name="Resource Files" Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav" UniqueIdentifier="{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}">
+    </Filter>
+  </Files>
+  <Globals>
+  </Globals>
+</VisualStudioProject>
